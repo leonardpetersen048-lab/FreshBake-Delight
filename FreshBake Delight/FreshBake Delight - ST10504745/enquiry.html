@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Enquiry</title>
+</head>
+<body>
+<!-- Header section with navigation -->
+<header>
+    <h1>FreshBake Delight</h1>
+    <!-- Navigation menu linking all pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Order / Enquiry</h2>
+
+    <!-- Simple Form -->
+    <<form name="enquiryForm" onsubmit="return validateForm()">
+
+    <!-- Name -->
+    <label>Full Name:</label><br>
+    <input type="text" name="name" id="name" required minlength="3">
+    <small id="nameError" style="color:red;"></small><br><br>
+
+    <!-- Email -->
+    <label>Email:</label><br>
+    <input type="email" name="email" id="email" required>
+    <small id="emailError" style="color:red;"></small><br><br>
+
+    <!-- Message -->
+    <label>Message:</label><br>
+    <textarea name="message" id="message" required minlength="10"></textarea>
+    <small id="messageError" style="color:red;"></small><br><br>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+
+</form>
+</main>
+
+<footer>
+    <p>&copy; 2026 FreshBake Delight</p>
+</footer>
+
+</body>
+</html>
