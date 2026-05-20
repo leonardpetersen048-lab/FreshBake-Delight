@@ -1,37 +1,62 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <title>About Us</title>
+    <title>About Us - FreshBake Delight</title>
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
+<!-- Page Body Starts Here -->
 <body>
 
+<!-- Website Header Section -->
 <header>
-    <h1>FreshBake Delight</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div class="container">
+<!-- Navigation Menu -->
+<nav>
+<div class="logo">FreshBake Delight</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
-<main>
-    <h2>About Us</h2>
-    <p>FreshBake Delight was established in 2026, providing freshly baked goods daily.</p>
+<!-- Main Content Section -->
+<section class="section fade-in">
+<div class="container">
+<h1>About FreshBake Delight</h1>
+<p>FreshBake Delight is a modern bakery dedicated to delivering freshly baked treats to customers every day. We focus on quality, creativity, and customer satisfaction.</p>
 
-    <h3>Mission</h3>
-    <p>To deliver high-quality baked products.</p>
+<div class="cards">
+<div class="card">
+<img src="images/croissant.jpg">
+<div class="card-content">
+<h3>Our Mission</h3>
+<p>To provide delicious bakery products that bring joy and comfort to every customer.</p>
+</div>
+</div>
 
-    <h3>Vision</h3>
-    <p>To become the most loved bakery in Gqeberha.</p>
-</main>
+<div class="card">
+<img src="images/muffins.jpg">
+<div class="card-content">
+<h3>Our Vision</h3>
+<p>To become the most loved bakery brand known for quality and innovation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
+<!-- Website Footer -->
 <footer>
-    <p>&copy; 2026 FreshBake Delight</p>
+<p>&copy; <span id="year"></span> FreshBake Delight. All Rights Reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
