@@ -1,55 +1,56 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <title>Enquiry</title>
+    <title>Enquiry - FreshBake Delight</title>
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
+<!-- Page Body Starts Here -->
 <body>
-<!-- Header section with navigation -->
+
+<!-- Website Header Section -->
 <header>
-    <h1>FreshBake Delight</h1>
-    <!-- Navigation menu linking all pages -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div class="container">
+<!-- Navigation Menu -->
+<nav>
+<div class="logo">FreshBake Delight</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
-<main>
-    <h2>Order / Enquiry</h2>
+<!-- Main Content Section -->
+<section class="section fade-in">
+<div class="container">
+<h1>Customer Enquiry Form</h1>
 
-    <!-- Simple Form -->
-    <<form name="enquiryForm" onsubmit="return validateForm()">
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name">
 
-    <!-- Name -->
-    <label>Full Name:</label><br>
-    <input type="text" name="name" id="name" required minlength="3">
-    <small id="nameError" style="color:red;"></small><br><br>
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email">
 
-    <!-- Email -->
-    <label>Email:</label><br>
-    <input type="email" name="email" id="email" required>
-    <small id="emailError" style="color:red;"></small><br><br>
+<label>Your Message</label>
+<textarea rows="6" placeholder="Type your enquiry here"></textarea>
 
-    <!-- Message -->
-    <label>Message:</label><br>
-    <textarea name="message" id="message" required minlength="10"></textarea>
-    <small id="messageError" style="color:red;"></small><br><br>
-
-    <!-- Submit -->
-    <button type="submit">Submit</button>
-
+<button type="submit">Submit Enquiry</button>
 </form>
-</main>
+</div>
+</section>
 
+<!-- Website Footer -->
 <footer>
-    <p>&copy; 2026 FreshBake Delight</p>
+<p>&copy; <span id="year"></span> FreshBake Delight. All Rights Reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
